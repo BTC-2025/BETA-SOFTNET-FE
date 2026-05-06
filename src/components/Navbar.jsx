@@ -43,8 +43,7 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
-        { name: 'Services', path: '/services' },
-        { name: 'Technology', path: '/technology' },
+        { name: 'Resources', path: '/resources' },
     ];
 
     return (
@@ -100,6 +99,9 @@ const Navbar = () => {
                                         className="absolute top-full right-0 mt-3 w-80 bg-white rounded-[2rem] shadow-2xl border border-slate-100 overflow-hidden p-4"
                                     >
                                         <div className="grid gap-2">
+                                            <div className="px-3 py-2">
+                                                <span className="text-[10px] font-black uppercase tracking-widest text-brand-blue/60">Category: Base</span>
+                                            </div>
                                             {productsList.map((product) => (
                                                 <a href={product.path} key={product.name} className="flex items-center gap-4 p-3 rounded-2xl hover:bg-brand-blue-light transition-colors group">
                                                     <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors">
@@ -111,6 +113,9 @@ const Navbar = () => {
                                                     </div>
                                                 </a>
                                             ))}
+                                            <div className="mt-2 pt-2 border-t border-slate-50 px-3">
+                                                <p className="text-[10px] text-slate-400 italic">More categories coming soon...</p>
+                                            </div>
                                         </div>
                                     </motion.div>
                                 )}

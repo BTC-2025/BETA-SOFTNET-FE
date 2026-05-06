@@ -1,7 +1,7 @@
 import React from 'react';
 import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
-import { Target, Lightbulb, Users, ArrowRight, Sparkles } from 'lucide-react';
+import { Target, Lightbulb, Users, ArrowRight, Sparkles, Wallet } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {

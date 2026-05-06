@@ -15,8 +15,8 @@ const Footer = () => {
                     <div className="col-span-2 lg:col-span-4 pr-0 lg:pr-16">
                         <a href="#" className="flex items-center gap-3 group mb-8">
                             <img src={logo} alt="Beta Softnet Logo" className="h-10 w-auto" />
-                            <span className="font-black text-2xl tracking-tighter">
-                                beta<span className="text-brand-blue">-softnet</span>
+                            <span className="font-black text-2xl tracking-tighter">Beta
+                                {/* beta<span className="text-brand-blue">-softnet</span> */}
                             </span>
                         </a>
                         <p className="text-slate-400 mb-8 leading-relaxed text-lg">
@@ -32,19 +32,24 @@ const Footer = () => {
                     </div>
 
                     {/* Navigation Columns */}
+                    {/* Products Column */}
                     <div className="col-span-1 lg:col-span-2">
-                        <h4 className="font-bold text-white mb-8 text-lg">Platform</h4>
-                        <ul className="flex flex-col gap-4 text-slate-400">
-                            {['Nexus Auth', 'Nexus DB', 'Nexus Shield', 'Nexus Analytics', 'Pricing'].map(item => (
-                                <li key={item}><a href="#" className="hover:text-brand-blue transition-colors flex items-center gap-2 group">{item} <ArrowRight size={14} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /></a></li>
-                            ))}
-                        </ul>
+                        <h4 className="font-bold text-white mb-8 text-lg">Our Products</h4>
+                        <div className="mb-4">
+                            <span className="text-[10px] font-black uppercase tracking-widest text-brand-blue/80 mb-4 block">Category: Base</span>
+                            <ul className="flex flex-col gap-4 text-slate-400">
+                                {['BNX Mail', 'B2Auth', 'Cliks Business'].map(item => (
+                                    <li key={item}><a href={`#${item.toLowerCase().replace(' ', '')}`} className="hover:text-brand-blue transition-colors flex items-center gap-2 group">{item} <ArrowRight size={14} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" /></a></li>
+                                ))}
+                            </ul>
+                        </div>
+                        <p className="text-[10px] text-slate-500 italic mt-6">More categories planned for future release.</p>
                     </div>
 
                     <div className="col-span-1 lg:col-span-2">
                         <h4 className="font-bold text-white mb-8 text-lg">Solutions</h4>
                         <ul className="flex flex-col gap-4 text-slate-400">
-                            {['For Startups', 'For Enterprise', 'Financial Services', 'Healthcare', 'E-commerce'].map(item => (
+                            {['For Startups', 'For Enterprise', 'Financial Services', 'E-commerce'].map(item => (
                                 <li key={item}><a href="#" className="hover:text-brand-blue transition-colors">{item}</a></li>
                             ))}
                         </ul>
@@ -53,7 +58,8 @@ const Footer = () => {
                     <div className="col-span-1 lg:col-span-2">
                         <h4 className="font-bold text-white mb-8 text-lg">Resources</h4>
                         <ul className="flex flex-col gap-4 text-slate-400">
-                            {['Documentation', 'API Reference', 'Case Studies', 'Blog', 'Status'].map(item => (
+                            <li><a href="/resources" className="hover:text-brand-blue transition-colors">Resource Hub</a></li>
+                            {['Documentation', 'API Reference', 'Case Studies', 'Blog'].map(item => (
                                 <li key={item}><a href="#" className="hover:text-brand-blue transition-colors">{item}</a></li>
                             ))}
                         </ul>
