@@ -1,25 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Users, ShieldCheck, Sparkles } from 'lucide-react';
+import { ShieldCheck, Sparkles, Wallet, Rocket, Mail } from 'lucide-react';
 
 const reasons = [
     {
         id: 1,
-        title: 'Rapid Agile Delivery',
-        desc: 'We use 2-week sprints to deliver working software quickly, ensuring your feedback is integrated constantly without long delays.',
-        icon: <Clock size={28} />
+        title: 'Proprietary Innovation',
+        desc: 'We focus 100% on building our own products like BNX Mail and B2Auth, ensuring that every feature is crafted with deep technical ownership.',
+        icon: <Rocket size={28} />
     },
     {
         id: 2,
-        title: 'Dedicated Expert Teams',
-        desc: 'You get a committed team of senior engineers and product managers working exclusively on your project from day one.',
-        icon: <Users size={28} />
+        title: 'Security-First Architecture',
+        desc: 'With B2Auth at our core, we build enterprise-grade security into every product, protecting your digital life with our custom security protocols.',
+        icon: <ShieldCheck size={28} />
     },
     {
         id: 3,
-        title: 'Enterprise Security',
-        desc: 'We build with security and compliance in mind from the start, protecting your critical business data at every layer.',
-        icon: <ShieldCheck size={28} />
+        title: 'The Fintech Edge',
+        desc: 'Our product Cliks is redefining how businesses manage finances, offering a unified app for all your financial and banking needs.',
+        icon: <Wallet size={28} />
     }
 ];
 
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/5 text-brand-blue font-bold text-xs uppercase tracking-widest mb-6"
                         >
                             <Sparkles size={14} className="animate-spin-slow" />
-                            The Beta Softnet Edge
+                            The Beta Softnet Advantage
                         </motion.div>
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                             viewport={{ once: true }}
                             className="heading-2 mb-8"
                         >
-                            Partner with a Team That <span className="text-gradient">Understands Scaling</span>
+                            Why Choose Our <span className="text-gradient">Proprietary Products?</span>
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ const WhyChooseUs = () => {
                             transition={{ delay: 0.1 }}
                             className="body-text mb-10 text-brand-text-muted"
                         >
-                            As a modern tech consultancy, we know that time-to-market is critical. We strip away the corporate bureaucracy to focus on pure engineering execution and product growth.
+                            As a pure product startup, we are not distracted by client projects. We dedicate our entire engineering force to perfecting the products you use every day.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
                             transition={{ delay: 0.2 }}
                         >
                             <button className="btn-primary">
-                                Schedule a Consultation
+                                Learn About Our Stack
                             </button>
                         </motion.div>
                     </div>

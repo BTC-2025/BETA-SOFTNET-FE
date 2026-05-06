@@ -1,33 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Database, ShieldCheck, BarChart3, Fingerprint, ExternalLink } from 'lucide-react';
+import { Menu, X, ChevronDown, Database, ShieldCheck, Mail, Wallet, BarChart3, Fingerprint, ExternalLink } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/beta-logo.png';
+// import logo from '../assets/beta-logo.png';
+import logo from '../assets/beta.png';
 
 const productsList = [
     {
-        name: 'Nexus Auth',
-        path: '#',
-        desc: 'Identity management & enterprise SSO.',
-        icon: <Fingerprint size={20} />
+        name: 'BNX Mail',
+        path: '#bnxmail',
+        desc: 'Gmail-like enterprise mail system.',
+        icon: <Mail size={20} />
     },
     {
-        name: 'Nexus DB',
-        path: '#',
-        desc: 'Global scale serverless database.',
-        icon: <Database size={20} />
-    },
-    {
-        name: 'Nexus Shield',
-        path: '#',
-        desc: 'Real-time threat mitigation.',
+        name: 'B2Auth',
+        path: '#b2auth',
+        desc: 'Advanced identity & security.',
         icon: <ShieldCheck size={20} />
     },
     {
-        name: 'Nexus Analytics',
-        path: '#',
-        desc: 'AI-driven user insights.',
-        icon: <BarChart3 size={20} />
+        name: 'Cliks Business',
+        path: '#cliks',
+        desc: 'All-in-one financial purpose app.',
+        icon: <Wallet size={20} />
     }
 ];
 
@@ -64,10 +59,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     {/* Logo & Brand */}
                     <Link to="/" className="flex items-center gap-3 group">
-                        <img src={logo} alt="Beta Softnet Logo" className="h-10 w-auto transition-transform group-hover:scale-110 duration-300" />
-                        <span className={`font-black text-xl tracking-tighter transition-colors ${scrolled ? 'text-brand-dark' : 'text-brand-dark'}`}>
-                            beta<span className="text-brand-blue">-softnet</span>
-                        </span>
+                        <img src={logo} alt="Beta Softnet Logo" className="h-16 w-auto transition-transform group-hover:scale-110 duration-300" />
                     </Link>
 
                     {/* Desktop Nav */}

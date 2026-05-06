@@ -38,7 +38,7 @@ const wordVariants = {
 };
 
 const HeroSection = () => {
-    const titleText = "Building Tomorrow's Digital Infrastructure Today.";
+    const titleText = "Innovating the Future with Premium Software Products.";
 
     return (
         <section className="relative pt-40 pb-24 lg:pt-52 lg:pb-40 overflow-hidden bg-white">
@@ -77,7 +77,7 @@ const HeroSection = () => {
                         className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-brand-blue/5 border border-brand-blue/10 text-brand-blue font-bold text-sm mb-8 shadow-sm backdrop-blur-sm"
                     >
                         <Sparkles size={16} className="animate-pulse" />
-                        Next-Gen Digital Solutions
+                        Celebrating 1 Year of Innovation
                     </motion.div>
 
                     <motion.h1 
@@ -88,7 +88,7 @@ const HeroSection = () => {
                             <motion.span 
                                 key={i} 
                                 variants={wordVariants}
-                                className={`inline-block mr-3 ${word === "Digital" || word === "Infrastructure" ? "text-gradient" : ""}`}
+                                className={`inline-block mr-3 ${word === "Software" || word === "Products." ? "text-gradient" : ""}`}
                             >
                                 {word}
                             </motion.span>
@@ -99,7 +99,7 @@ const HeroSection = () => {
                         variants={itemVariants}
                         className="body-text mb-12 max-w-3xl mx-auto text-brand-text-muted"
                     >
-                        At <span className="font-bold text-brand-dark">beta-softnet</span>, we empower ambitious enterprises with elite software engineering, high-performance infrastructure, and strategic digital transformation.
+                        Born as a dedicated product startup, <span className="font-bold text-brand-dark">beta-softnet</span> focuses on building world-class proprietary solutions. From communication to fintech, we are crafting the digital tools of tomorrow.
                     </motion.p>
 
                     <motion.div 
@@ -107,11 +107,11 @@ const HeroSection = () => {
                         className="flex flex-col sm:flex-row items-center gap-6"
                     >
                         <button className="btn-primary flex items-center gap-2 group">
-                            Accelerate Your Growth
+                            Explore Our Products
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </button>
                         <button className="btn-secondary">
-                            View Case Studies
+                            Our Journey
                         </button>
                     </motion.div>
                 </div>

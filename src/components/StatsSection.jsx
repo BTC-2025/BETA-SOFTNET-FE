@@ -27,10 +27,10 @@ const Counter = ({ value, duration = 2 }) => {
 };
 
 const stats = [
-    { label: 'Successful Projects', value: '250+' },
-    { label: 'Global Clients', value: '80+' },
-    { label: 'Engineering Experts', value: '120+' },
-    { label: 'Uptime Reliability', value: '99.9%' }
+    { label: 'BNX Mail Users', value: '50k+' },
+    { label: 'B2Auth Requests/Day', value: '2M+' },
+    { label: 'Cliks Transactions', value: '10M+' },
+    { label: 'Platform Uptime', value: '99.9%' }
 ];
 
 const StatsSection = () => {
@@ -60,7 +60,7 @@ const StatsSection = () => {
                             <div className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tighter group-hover:text-brand-blue transition-colors duration-500">
                                 <Counter value={stat.value} />
                             </div>
-                            <div className="text-slate-400 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs">
+                            <div className="text-slate-400 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs text-balance">
                                 {stat.label}
                             </div>
                         </motion.div>

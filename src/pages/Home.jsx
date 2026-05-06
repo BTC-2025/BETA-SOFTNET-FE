@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import SEO from '../components/SEO';
 import HeroSection from '../components/HeroSection';
-import ServicesSection from '../components/ServicesSection';
+// import HeroSection from '../components/HeroSection';
+import ProductShowcase from '../components/ProductShowcase';
 import WhyChooseUs from '../components/WhyChooseUs';
 import StatsSection from '../components/StatsSection';
-import logo from '../assets/beta-logo.png';
+import logo from '../assets/beta.png';
 
 const CallToAction = () => (
     <section className="py-32 bg-brand-dark relative overflow-hidden">
@@ -19,9 +20,9 @@ const CallToAction = () => (
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="mb-10"
+                    className="mb-2"
                 >
-                    <img src={logo} alt="Beta Softnet" className="h-16 w-auto" />
+                    <img src={logo} alt="Beta Softnet" className="h-24 w-auto" />
                 </motion.div>
                 
                 <h2 className="heading-2 text-white mb-8">Ready to <span className="text-gradient">Scale Your Vision?</span></h2>
@@ -37,11 +38,11 @@ const CallToAction = () => (
                         Book Strategy Session
                     </button>
                 </div>
-
+{/* 
                 <div className="mt-16 flex items-center gap-3 text-slate-500 font-bold text-xs uppercase tracking-widest">
                     <Sparkles size={14} className="text-brand-blue" />
                     Trusted by 200+ global brands
-                </div>
+                </div> */}
             </div>
         </div>
     </section>
@@ -52,7 +53,7 @@ const Home = () => {
         <div className="overflow-x-hidden">
             <SEO title="Home" />
             <HeroSection />
-            <ServicesSection />
+            <ProductShowcase />
             <StatsSection />
             <WhyChooseUs />
             <CallToAction />

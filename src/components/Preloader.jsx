@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import logo from '../assets/beta-logo.png';
+import logo from '../assets/beta.png';
 
 const Preloader = () => {
     return (
@@ -36,7 +36,7 @@ const Preloader = () => {
                     className="flex flex-col items-center gap-6"
                 >
                     <div className="relative">
-                        <img src={logo} alt="Beta Softnet" className="h-16 w-auto relative z-10" />
+                        <img src={logo} alt="Beta Softnet" className="h-32 w-auto relative z-10" />
                         <motion.div
                             animate={{ rotate: 360 }}
                             transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
